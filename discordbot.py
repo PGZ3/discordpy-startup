@@ -13,14 +13,10 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
-    
-    
-@bot.command()
-async def アイアンマンチャレンジ(ctx):
-    await ctx.send('pong')
+@bot.command(name="アイアンマンチャレンジ")
+async def iron(ctx):
+    await ctx.send('OK')
+
 
 
 bot.run(token)
